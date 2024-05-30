@@ -1,3 +1,11 @@
+# Analysis Study
+
+This code was forked from [Bi-Model-Intent-And-Slot](https://github.com/ray075hl/Bi-Model-Intent-And-Slot) by ray075hl and AllenSpurs, implementing the model described in ["A Bi-model based RNN Semantic Frame Parsing Model for Intent Detection and Slot Filling".](https://www.aclweb.org/anthology/N18-2050).
+
+This code will only be used for the analysis study assignment in CSE156. It will not be used for commercial purposes.
+
+# BELOW IS FROM ORIGINAL GITHUB
+
 # Bi-Model-Intent-And-Slot
 
 Pytorch implementation of paper ["A Bi-model based RNN Semantic Frame Parsing Model for Intent
