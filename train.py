@@ -9,6 +9,8 @@ import config as cfg
 from data2index_ver2 import train_data, test_data, index2slot_dict
 from model import *
 
+from make_dict import intent_dict
+
 epoch_num = cfg.total_epoch
 
 slot_model = Slot().to(device)
@@ -37,7 +39,7 @@ for epoch in range(epoch_num):
         y_slot = torch.tensor(slot_label).to(device)
         y_slot = utils.one_hot(y_slot).to(device)
         y_intent = torch.tensor(intent_label).to(device)
-        y_intent = utils.one_hot(y_intent, Num=18).to(device)
+        y_intent = utils.one_hot(y_intent, Num=len(intent_dict)).to(device)
 
 		# Calculate compute graph
         slot_optimizer.zero_grad()
