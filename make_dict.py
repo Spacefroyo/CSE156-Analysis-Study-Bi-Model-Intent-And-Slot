@@ -30,21 +30,25 @@ for i, item in enumerate(words_vocab):
 
 # Make slot tag dict 
 slot_dict = {}
+slot_list = []
 
 with open(cfg.vocab_slot_file) as f:
 
     for i, line in enumerate(f.readlines()):
         slot_dict[line.strip()] = i
+        slot_list.append(line.strip())
 
 
 # print(slot_dict)
 
 # Make intent dict 
 intent_dict = {}
+intent_list = []
 
 with open(cfg.vocab_intent_file) as f:
     for i, line in enumerate(f.readlines()):
         intent_dict[line.strip()] = i
+        intent_list.append(line.strip())
 
 # print(intent_dict)
 
