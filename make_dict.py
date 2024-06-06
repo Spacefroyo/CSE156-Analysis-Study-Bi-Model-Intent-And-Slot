@@ -53,3 +53,23 @@ with open(cfg.vocab_intent_file) as f:
 # print(intent_dict)
 
 
+# Slot by intent
+slot_by_intent = {}
+for intent in intent_list:
+    slot_by_intent[intent.lower()] = set()
+with open(cfg.train_file) as f:
+    for line in f.readlines():
+        line = line.strip().lower().split()
+
+        for index, item in enumerate(line):
+            if item == '<=>':
+                break
+            label = item.split(':')[1][2:]
+            if label == 'O':
+                continue
+            slot_by_intent[line[-1]].add(label)
+for intent in intent_list:
+    slot_by_intent[intent.lower()] = list(slot_by_intent[intent.lower()])
+import json
+with open('snips/data/slot_by_intent.json', 'w') as f:
+    json.dump(slot_by_intent, f, indent=1)

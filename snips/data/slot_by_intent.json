@@ -1,0 +1,76 @@
+{
+ "searchcreativework": [
+  "",
+  "object_name",
+  "object_type"
+ ],
+ "getweather": [
+  "",
+  "country",
+  "spatial_relation",
+  "timerange",
+  "geographic_poi",
+  "condition_temperature",
+  "current_location",
+  "city",
+  "condition_description",
+  "state"
+ ],
+ "bookrestaurant": [
+  "",
+  "restaurant_type",
+  "country",
+  "spatial_relation",
+  "facility",
+  "served_dish",
+  "timerange",
+  "sort",
+  "city",
+  "restaurant_name",
+  "poi",
+  "party_size_number",
+  "cuisine",
+  "party_size_description",
+  "state"
+ ],
+ "playmusic": [
+  "",
+  "year",
+  "album",
+  "artist",
+  "sort",
+  "music_item",
+  "track",
+  "service",
+  "playlist",
+  "genre"
+ ],
+ "addtoplaylist": [
+  "",
+  "playlist_owner",
+  "artist",
+  "music_item",
+  "entity_name",
+  "playlist"
+ ],
+ "ratebook": [
+  "",
+  "object_name",
+  "rating_value",
+  "rating_unit",
+  "object_select",
+  "object_part_of_series_type",
+  "best_rating",
+  "object_type"
+ ],
+ "searchscreeningevent": [
+  "",
+  "movie_name",
+  "spatial_relation",
+  "object_location_type",
+  "timerange",
+  "movie_type",
+  "location_name",
+  "object_type"
+ ]
+}
